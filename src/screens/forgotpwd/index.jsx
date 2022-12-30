@@ -1,15 +1,15 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View } from "react-native"
 import styles from "./styles";
 
-const signUpScreen = () => {
+const forgotPwdScreen = () => {
     return(
         <View>
             <Text>
-                Sign Up Screen
+                Forgot Password
             </Text>
         </View>
     )
 }
 
-export default signUpScreen;
+export default forgotPwdScreen;
