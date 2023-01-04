@@ -1,13 +1,20 @@
 import React from "react";
-import { Text, View } from "react-native"
+import { Text, TouchableOpacity, View, TextInput } from "react-native"
 import styles from "./styles";
 
 const forgotPwdScreen = () => {
     return(
-        <View>
-            <Text>
-                Forgot Password
-            </Text>
+        <View style={ styles.container } >
+            <Text style={ styles.title } >Forgot password</Text>
+            <Text style={ styles.subtitle } >Enter your email address below and we will you an email with instructions on how to change your password.</Text>
+            <View>
+                <TextInput placeholder="Enter your email" style={ styles.textinput } />
+            </View>
+            <TouchableOpacity>
+                <View style={ styles.button } >
+                    <Text style={ styles.buttonText } >Send</Text>
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }

@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
         borderBottomColor: COLORS.white,
         borderBottomWidth: 1,
         paddingVertical: 15,
-        marginHorizontal: 15
+        marginHorizontal: 15,
+        marginVertical: 5
     },
     btnContainer: {
         marginTop: 50
@@ -46,6 +47,32 @@ const styles = StyleSheet.create({
         color: COLORS.white,
         fontWeight: 'bold',
         fontSize: SIZES.h4
+    },
+    button2: {
+        flexDirection: 'row',
+        backgroundColor: COLORS.blue,
+        padding: 15,
+        borderRadius: 10,
+        marginHorizontal: 30,
+        marginVertical: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    logo: {
+        marginRight: 10,
+        flexDirection: 'row',
+        padding: 7
+    },
+    text: {
+        color: COLORS.white,
+        textAlign: 'center',
+        marginTop: 10,
+        fontWeight: '600',
+        fontSize: SIZES.h5
+    },
+    bottomContainer: {
+        justifyContent: 'center',
+        marginTop: 50
     }
 })
 

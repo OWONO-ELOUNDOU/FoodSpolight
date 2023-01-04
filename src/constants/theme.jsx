@@ -7,7 +7,8 @@ export const COLORS = {
     title: '#072f4a',
     black: '#000000',
     lightGrey: '#d3d6d6',
-    white: '#ffffff'
+    white: '#ffffff',
+    blue: '#087bb6'
 };
 
 export const SIZES = {
