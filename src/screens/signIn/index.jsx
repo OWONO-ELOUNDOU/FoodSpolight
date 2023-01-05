@@ -20,7 +20,7 @@ const signInScreen = ({ navigation }) => {
                         <TextInput placeholder='Password' placeholderTextColor={ COLORS.white } style={ styles.textInput } />
                     </View>
                     <View style={ styles.btnContainer } >
-                        <TouchableOpacity onPress={() => {}} >
+                        <TouchableOpacity onPress={() => navigation.navigate('main')} >
                             <View style={ styles.button1 } >
                                 <Text style={ styles.btnText } >SIGN IN</Text>
                             </View>
