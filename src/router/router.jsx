@@ -54,11 +54,45 @@ const homeStack = createStackNavigator({
             fontWeight: '800'
         }
     }
-})
+});
+
+const accountStack = createStackNavigator({
+    account: {
+        screen: accountScreen,
+    }
+},{
+    defaultNavigationOptions: {
+        headerStyle: {
+            backgroundColor: COLORS.primary
+        },
+        headerTitle: 'Account',
+        headerTitleStyle: {
+            color: COLORS.white,
+            fontWeight: '800'
+        }
+    }
+});
+
+const historyStack = createStackNavigator({
+    history: {
+        screen: historyScreen,
+    }
+},{
+    defaultNavigationOptions: {
+        headerStyle: {
+            backgroundColor: COLORS.primary
+        },
+        headerTitle: 'History',
+        headerTitleStyle: {
+            color: COLORS.white,
+            fontWeight: '800'
+        }
+    }
+});
 
 const bottomStack = createBottomTabNavigator({
     account: {
-        screen: accountScreen,
+        screen: accountStack,
         navigationOptions: {
             tabBarLabel: 'Account',
             tabBarIcon: ({tintColor, focused}) => <Icon name='account-outline' size={focused ? 30: 20} color={tintColor} />
@@ -72,7 +106,7 @@ const bottomStack = createBottomTabNavigator({
         }
     },
     dish: {
-        screen: historyScreen,
+        screen: historyStack,
         navigationOptions: {
             tabBarLabel: 'History',
             tabBarIcon: ({tintColor, focused}) => <Icon name='history' size={focused ? 30: 20} color={tintColor} />
