@@ -91,6 +91,7 @@ const historyStack = createStackNavigator({
 });
 
 const bottomStack = createBottomTabNavigator({
+    /*
     account: {
         screen: accountStack,
         navigationOptions: {
@@ -98,6 +99,7 @@ const bottomStack = createBottomTabNavigator({
             tabBarIcon: ({tintColor, focused}) => <Icon name='account-outline' size={focused ? 30: 20} color={tintColor} />
         }
     },
+    */
     home: {
         screen: homeStack,
         navigationOptions: {
@@ -105,6 +107,7 @@ const bottomStack = createBottomTabNavigator({
             tabBarIcon: ({tintColor, focused}) => <Icon name='home-outline' size={focused ? 30: 20} color={tintColor} />
         }
     },
+    /*
     dish: {
         screen: historyStack,
         navigationOptions: {
@@ -112,6 +115,8 @@ const bottomStack = createBottomTabNavigator({
             tabBarIcon: ({tintColor, focused}) => <Icon name='history' size={focused ? 30: 20} color={tintColor} />
         }
     }
+
+    */
 },{
     initialRouteName: 'home',
     tabBarOptions: {

@@ -45,6 +45,22 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: SIZES.h4
     },
+    WriteTaskWrapper: {
+        position: 'absolute',
+        bottom: 60,
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+    tasksWrapper: {
+        paddingTop: 40,
+        paddingHorizontal: 20
+    },
+    sectionTitle: {
+        fontSize: 24,
+        fontWeight: 'bold'
+    }
 });
 
 export default styles;
